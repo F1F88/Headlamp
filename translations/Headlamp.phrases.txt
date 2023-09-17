@@ -1,0 +1,44 @@
+"Phrases"
+{
+    "Phrase_Chat_Prefix"
+    {
+        "en"        "{green}[HL]{default}"
+        "chi"     	"{green}[头灯]{default}"
+        "zho"     	"{green}[头灯]{default}"
+    }
+
+    "Phrase_Neew_Alive"
+    {
+        "en"        "Please use while alive"
+        "chi"       "请在存活时使用"
+        "zho"       "請在存活時使用"
+    }
+
+    "Phrase_Neew_maglite_walkietalkie"
+    {
+        "en"        "Need maglite or walkie talkie"
+        "chi"       "你必须拥有手电筒或者对讲机才能开启头灯"
+        "zho"       "你必须拥有手电筒或者对讲机才能开启头灯"
+    }
+
+    "Phrase_TurnOn_Failure"
+    {
+        "en"        "Turn On failure"
+        "chi"       "开启失败, 请稍后再试"
+        "zho"       "开启失败, 请稍后再试"
+    }
+
+    "Phrase_TurnOn_Succsess"
+    {
+        "en"        "Turn On Headlamp"
+        "chi"       "头灯已启用"
+        "zho"       "头灯已启用"
+    }
+
+    "Phrase_TurnOff"
+    {
+        "en"        "Turn Off Headlamp"
+        "chi"       "头灯已关闭"
+        "zho"       "头灯已关闭"
+    }
+}
