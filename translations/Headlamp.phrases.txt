@@ -2,9 +2,9 @@
 {
     "Phrase_Chat_Prefix"
     {
-        "en"        "{green}[HL]{default}"
-        "chi"     	"{green}[头灯]{default}"
-        "zho"     	"{green}[头灯]{default}"
+        "en"        "{gray}[HL]{default} "
+        "chi"     	"{gray}[头灯]{default} "
+        "zho"     	"{gray}[头灯]{default} "
     }
 
     "Phrase_Neew_Alive"
@@ -16,9 +16,9 @@
 
     "Phrase_Neew_maglite_walkietalkie"
     {
-        "en"        "Need maglite or walkie talkie"
-        "chi"       "你必须拥有手电筒或者对讲机才能开启头灯"
-        "zho"       "你必须拥有手电筒或者对讲机才能开启头灯"
+        "en"        "Need {lightyellow}maglite{default} or {lightyellow}walkie{default} talkie"
+        "chi"       "你必须拥有{lightyellow}手电筒{default}或者{lightyellow}对讲机{default}才能开启头灯"
+        "zho"       "你必须拥有{lightyellow}手电筒{default}或者{lightyellow}对讲机{default}才能开启头灯"
     }
 
     "Phrase_TurnOn_Failure"
