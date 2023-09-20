@@ -15,7 +15,7 @@
 #define SOUND_FLASHLIGHT_OFF                "weapons/tools/flashlight/flashlight_off2.wav"
 
 #define PLUGIN_NAME                         "Headlamp"
-#define PLUGIN_VERSION                      "v1.0.0"
+#define PLUGIN_VERSION                      "v1.0.1"
 #define PLUGIN_DESCRIPTION                  "Create a headlamp for the user to use for lighting"
 #define PREFIX_CV                           "sm_headlamp"
 #define PREFIX_PHRASES_FILE                 PLUGIN_NAME
@@ -244,7 +244,7 @@ bool CreateModels(int client)
         SectionModel model;
         g_configs.models.GetArray(i, model, sizeof(SectionModel));
 
-        if( model.enabled )
+        if( ! model.enabled )
             continue ;
 
         int entity_ref = Models_CreateModel(client, model);

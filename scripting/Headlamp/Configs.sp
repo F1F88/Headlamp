@@ -105,7 +105,7 @@ void Configs_ParseSectionModels(KeyValues kv)
 
         SectionModel model;
 
-        model.enabled   = kv.GetNum("enabled", 1) == 0 ? false : true;
+        model.enabled   = kv.GetNum("enabled", 0) == 0 ? false : true;
         model.scale     = kv.GetFloat("scale", 1.0);
         kv.GetString("path",            model.path,             sizeof(SectionModel::path),             MODEL_PROPS_SPOTLIGHT);
         kv.GetString("attachment",      model.attachment,       sizeof(SectionModel::attachment),       "Head");
