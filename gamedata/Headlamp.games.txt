@@ -1,0 +1,22 @@
+"Games"
+{
+	"nmrih"
+	{
+		"Offsets"
+		{
+			"CNMRiH_Player::HasFlashlight"
+			{
+				// bool ()
+				"windows" "502"
+				"linux" "503"
+			}
+
+			"CNMRiH_Player::HasWalkieTalkie"
+			{
+				// bool ()
+				"windows" "503"
+				"linux" "504"
+			}
+        }
+	}
+}

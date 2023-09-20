@@ -3,7 +3,6 @@
 #include <sdkhooks>
 
 #include <multicolors>
-#include <vscript_proxy>
 
 #pragma semicolon 1
 #pragma newdecls required
@@ -65,6 +64,12 @@ public void OnPluginStart()
 
     CreateConVar(PREFIX_CV..."_version", PLUGIN_VERSION, PLUGIN_DESCRIPTION, FCVAR_SPONLY | FCVAR_DONTRECORD);
     // ConVar_Load();
+
+    Handle game_data = new GameData(PLUGIN_NAME...".games");
+    if( game_data == INVALID_HANDLE )
+		SetFailState("Failed to load gamedata");
+
+    NMRIH_LoadGameData(game_data);
 
     // AutoExecConfig(true, PLUGIN_NAME);
 
