@@ -15,7 +15,7 @@
 #define SOUND_FLASHLIGHT_OFF                "weapons/tools/flashlight/flashlight_off2.wav"
 
 #define PLUGIN_NAME                         "Headlamp"
-#define PLUGIN_VERSION                      "v1.0.1"
+#define PLUGIN_VERSION                      "v1.0.2"
 #define PLUGIN_DESCRIPTION                  "Create a headlamp for the user to use for lighting"
 #define PREFIX_CV                           "sm_headlamp"
 #define PREFIX_PHRASES_FILE                 PLUGIN_NAME
@@ -261,8 +261,10 @@ bool CreateModels(int client)
 // 移除插件为客户创建的所有实体, 将 headlamp switch flag 置为 false
 bool RemoveLightAndModels(int client)
 {
+    // Light
     SafeRemoveEntity( EntRefToEntIndex( g_client_data[client].light_ref ) );
 
+    // Models
     if( g_client_data[client].models_ref != null && g_client_data[client].models_ref != INVALID_HANDLE )
     {
         int len = g_client_data[client].models_ref.Length;
@@ -313,15 +315,19 @@ void NMRIH_Correction_Light_Rotation(int light_entity, int weapon)
 // 避免世界、客户被移除，或无效的实体导致函数被中断
 stock void SafeRemoveEntity(int entity)
 {
-    if( entity >= 0 && entity <= MaxClients )
+    if( entity <= 0 )
     {
-        PrintToServer("["...PLUGIN_NAME..."] Attempted to delete player or world entity %d. ", entity);
+        // PrintToServer("["...PLUGIN_NAME..."] Attempted to delete world or invalid entity %d. ", entity);
         return ;
     }
-
-    if( ! IsValidEntity(entity) )
+    else if( entity <= MaxClients )
     {
-        PrintToServer("["...PLUGIN_NAME..."] Attempted to delete a invalid entity %d. ", entity);
+        // PrintToServer("["...PLUGIN_NAME..."] Attempted to delete player or world entity %d. ", entity);
+        return ;
+    }
+    else if( ! IsValidEntity(entity) )
+    {
+        // PrintToServer("["...PLUGIN_NAME..."] Attempted to delete a invalid entity %d. ", entity);
         return ;
     }
 
