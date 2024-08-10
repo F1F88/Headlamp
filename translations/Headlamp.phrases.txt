@@ -5,6 +5,7 @@
         "en"        "{gray}[HL]{default} "
         "chi"     	"{gray}[头灯]{default} "
         "zho"     	"{gray}[头灯]{default} "
+        "ru"        "{gray}[НФ]{default} "
     }
 
     "Phrase_Neew_Alive"
@@ -12,6 +13,7 @@
         "en"        "Please use while alive"
         "chi"       "请在存活时使用"
         "zho"       "請在存活時使用"
+        "ru"        "Используйте, если живы"
     }
 
     "Phrase_Neew_maglite_walkietalkie"
@@ -19,6 +21,7 @@
         "en"        "Need {lightyellow}maglite{default} or {lightyellow}walkie{default} talkie"
         "chi"       "你必须拥有{lightyellow}手电筒{default}或者{lightyellow}对讲机{default}才能开启头灯"
         "zho"       "你必须拥有{lightyellow}手电筒{default}或者{lightyellow}对讲机{default}才能开启头灯"
+        "ru"        "Нужен {lightyellow}фонарик{default} или {lightyellow}рация{default}"
     }
 
     "Phrase_TurnOn_Failure"
@@ -26,6 +29,7 @@
         "en"        "Turn On failure"
         "chi"       "开启失败, 请稍后再试"
         "zho"       "开启失败, 请稍后再试"
+        "ru"        "Сбой при включении"
     }
 
     "Phrase_TurnOn_Succsess"
@@ -33,6 +37,7 @@
         "en"        "Turn On Headlamp"
         "chi"       "头灯已启用"
         "zho"       "头灯已启用"
+        "ru"        "Включён налобный фонарик"
     }
 
     "Phrase_TurnOff"
@@ -40,5 +45,6 @@
         "en"        "Turn Off Headlamp"
         "chi"       "头灯已关闭"
         "zho"       "头灯已关闭"
+        "ru"        "Отключён налобный фонарик"
     }
 }
